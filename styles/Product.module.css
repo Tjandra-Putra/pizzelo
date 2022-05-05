@@ -1,0 +1,166 @@
+.container {
+  height: calc(100vh - 100px);
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  flex: 1;
+  padding: 20px;
+}
+
+.imgContainer {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+.title {
+  padding-top: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.price {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #e64a19;
+  color: #e64a19;
+}
+
+.desc {
+  max-width: 35vw;
+  text-align: justify;
+  line-height: 1.7rem;
+}
+
+.choose {
+  font-weight: 500;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.sizes {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.size {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.size:nth-child(2) {
+  width: 40px;
+  height: 40px;
+}
+
+.size:last-child {
+  width: 50px;
+  height: 50px;
+}
+
+.number {
+  position: absolute;
+  top: -5px;
+  right: -20px;
+  background-color: rgba(0, 0, 0, 0.664);
+  color: white;
+  font-size: 13px;
+  padding: 0 5px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.label {
+  cursor: pointer;
+  padding-right: 1rem;
+}
+
+.ingredients {
+  display: flex;
+  margin-top: -0.5rem;
+}
+
+.add {
+  margin-top: 5rem;
+}
+
+.quantity {
+  width: 50px;
+  height: 40px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.button {
+  height: 40px;
+  min-width: 7rem;
+  margin-left: 10px;
+  background-color: #e64a19;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.766) !important;
+  transition: 0.5s;
+}
+
+/** MODILE **/
+@media screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+  }
+  .imgContainer {
+    width: 70vw;
+    height: 70vw;
+    margin-top: 20px;
+  }
+
+  .title {
+    margin: 5px;
+    font-size: 1.8rem;
+  }
+
+  .desc {
+    max-width: none;
+    text-align: center;
+  }
+
+  .sizes {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  .ingredients {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .option {
+    margin: 10px;
+    font-size: 1.1rem;
+  }
+
+  .add {
+    float: right;
+  }
+}

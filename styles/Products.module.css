@@ -1,0 +1,47 @@
+.container {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.desc {
+  font-size: 24px;
+  color: #444;
+  width: 70%;
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/** MODILE **/
+@media screen and (max-width: 480px) {
+  .title {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+    width: 90%;
+    text-align: center;
+  }
+
+  
+}

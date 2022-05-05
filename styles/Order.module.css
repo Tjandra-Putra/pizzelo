@@ -1,0 +1,164 @@
+.container {
+  padding: 50px;
+  display: flex;
+}
+
+.pageTitle {
+  padding: 15px 50px;
+  font-size: 2rem;
+}
+
+.left {
+  flex: 3;
+}
+
+.right {
+  flex: 1;
+}
+
+.table {
+  width: 100% !important;
+  border-spacing: 20px;
+  margin-top: -5vh;
+}
+
+.th {
+  font-weight: 600;
+  text-align: left;
+}
+
+.name {
+  /* color: #e64a19; */
+  font-weight: 500;
+}
+
+.id {
+  font-weight: 500;
+}
+
+.tr {
+  border: 1px solid black;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: not-allowed;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.766) !important;
+  transition: 0.5s;
+}
+
+.totalText {
+  border-top: 1px solid rgba(221, 221, 221, 0.708);
+  padding: 1rem 0;
+  font-weight: 500;
+}
+
+.totalText span {
+  float: right;
+  font-weight: 400;
+}
+
+.title {
+  font-weight: 500;
+  margin-top: -3vh;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.statusTitle {
+  margin-bottom: 0.5rem;
+}
+
+.inProgress {
+  animation: inProgress 1s ease infinite alternate;
+}
+
+@keyframes inProgress {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.notDone {
+  opacity: 0.3 !important;
+}
+
+.notDone .checkedIcon,
+.inProgress .checkedIcon {
+  display: none !important;
+}
+
+.rowHeader {
+  /* background-color: rgba(0, 0, 0, 0.072);
+  border-radius: 10px; */
+  text-transform: uppercase;
+}
+
+/** MODILE **/
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+  }
+
+  .title {
+    margin-top: 1rem;
+  }
+
+  .pageTitle {
+    padding: 15px 20px;
+    font-size: 2rem;
+  }
+
+  .imgContainer {
+    margin-left: 7rem;
+  }
+
+  .rowHeader {
+    display: none;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .statusTitle {
+    word-wrap: break-word;
+  }
+
+  .trs {
+    transform: translateX(4rem);
+  }
+
+  .id::before {
+    content: "ID: ";
+  }
+}

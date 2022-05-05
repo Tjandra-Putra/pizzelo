@@ -1,0 +1,44 @@
+.container {
+  width: 22%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.image {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e64a19;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+
+.desc {
+  text-align: center;
+  color: #777;
+}
+
+/** MODILE **/
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+}
